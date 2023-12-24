@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
     private float wallJump;
     private float horizontalInput;
-
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
