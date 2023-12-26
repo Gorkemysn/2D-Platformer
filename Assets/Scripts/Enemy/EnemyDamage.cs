@@ -12,10 +12,12 @@ public class EnemyDamage : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
     private Animator anim;
     private Health playerHealth;
+    private EnemyPatrol enemyPatrol;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        enemyPatrol = GetComponentInParent<EnemyPatrol>();
     }
 
     private void Update()
@@ -30,6 +32,11 @@ public class EnemyDamage : MonoBehaviour
                     anim.SetTrigger("enemyAttack");
                 }
             }
+
+        if (enemyPatrol != null)
+        {
+            enemyPatrol.enabled = !PlayerInSight();
+        }
     }
 
     private bool PlayerInSight()
