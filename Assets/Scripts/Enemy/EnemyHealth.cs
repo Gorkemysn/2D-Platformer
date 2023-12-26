@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
+    public float destroyDelay;
     public float currentHealth;
     private Animator anim;
     private bool dead;
@@ -28,10 +29,19 @@ public class EnemyHealth : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("die");
-                GetComponent<PlayerMovement>().enabled = false;
+                GetComponent<EnemyDamage>().enabled = false;
                 dead = true;
             }
+            StartCoroutine(DestroyAfterDelay());
         }
+    }
+    IEnumerator DestroyAfterDelay()
+    {
+        // Belirtilen süre kadar bekleyip sonra düþmaný yok et
+        yield return new WaitForSeconds(destroyDelay);
+
+        // Ölüm animasyonu ve beklenen süre tamamlandýktan sonra düþmaný yok et
+        Destroy(gameObject);
     }
 }
 

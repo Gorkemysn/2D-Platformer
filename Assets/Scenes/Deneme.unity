@@ -1272,6 +1272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  destroyDelay: 3
   currentHealth: 30
 --- !u!1 &1385669847
 GameObject:
@@ -4288,8 +4289,8 @@ GameObject:
   - component: {fileID: 2137305464}
   - component: {fileID: 2137305463}
   - component: {fileID: 2137305462}
-  - component: {fileID: 2137305460}
-  - component: {fileID: 2137305466}
+  - component: {fileID: 2137305468}
+  - component: {fileID: 2137305470}
   m_Layer: 8
   m_Name: EnemySkeleton
   m_TagString: enemy
@@ -4297,19 +4298,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2137305460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2137305459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41ac969dd41eff4ebe3b2b17fdd2355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
 --- !u!61 &2137305462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4417,13 +4405,13 @@ Transform:
   m_GameObject: {fileID: 2137305459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.8910885, y: 0.99, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2137305466
+--- !u!114 &2137305468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4436,7 +4424,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  destroyDelay: 10
   currentHealth: 30
+--- !u!114 &2137305470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137305459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea423fd1c7bf5f42aa9b2ffd7773ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 1.5
+  range: 2.2
+  colliderDistance: 0.5
+  damage: 2
+  boxCollider: {fileID: 2137305462}
 --- !u!1001 &5950621653047138312
 PrefabInstance:
   m_ObjectHideFlags: 0
