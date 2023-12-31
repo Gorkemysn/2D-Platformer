@@ -8,16 +8,19 @@ public class Health : MonoBehaviour
     public float currentHealth;
     private Animator anim;
     private bool dead;
+    public HealthBar healthBar;
 
     private void Awake()
     {
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         anim = GetComponent<Animator>();
     }
 
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, maxHealth);
+        healthBar.SetHealth(currentHealth);
 
         if (currentHealth > 0)
         {
