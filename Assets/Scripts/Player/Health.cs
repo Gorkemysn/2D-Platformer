@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     private Animator anim;
     private bool dead;
     public HealthBar healthBar;
+    public DeathMenu deathMenu;
 
     private void Awake()
     {
@@ -30,10 +31,25 @@ public class Health : MonoBehaviour
         {
             if (!dead)
             {
-                anim.SetTrigger("die");
-                GetComponent<PlayerMovement>().enabled = false;
-                dead = true;
+                DieWithDelay();
             }
+        }
+    }
+    private void DieWithDelay()
+    {
+        anim.SetTrigger("die");
+        GetComponent<PlayerMovement>().enabled = false;
+        dead = true;
+
+        Invoke("ShowDeathMenu", 2f); // Ölüm menüsünü 3 saniye sonra göster
+    }
+
+    private void ShowDeathMenu()
+    {
+        // Ölüm menüsünü göster
+        if (deathMenu != null)
+        {
+            deathMenu.ShowDeathScreen();
         }
     }
 }
