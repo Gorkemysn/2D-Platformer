@@ -884,7 +884,7 @@ TextureImporter:
       Rings_Psd_0: 2039757500
       Rings_Psd_16: -1375097960
       Rings_Psd_17: 663587508
-      Rings_Psd_23: -284001697
+      Rings_Psd_9: 1001586095
       Rings_Psd_25: -1060290189
       Rings_Psd_27: 1909145728
       Rings_Psd_3: -1998289091
@@ -904,11 +904,11 @@ TextureImporter:
       Rings_Psd_31: 519619469
       Rings_Psd_22: 1798306489
       Rings_Psd_24: 1442374791
-      Rings_Psd_8: -217266201
-      Rings_Psd_15: -2051430554
-      Rings_Psd_10: 1769568004
       Rings_Psd_7: 1565257262
-      Rings_Psd_9: 1001586095
+      Rings_Psd_15: -2051430554
+      Rings_Psd_8: -217266201
+      Rings_Psd_10: 1769568004
+      Rings_Psd_23: -284001697
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
