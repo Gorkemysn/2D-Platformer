@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - enemy
   - Ring
+  - Goal
   layers:
   - Default
   - TransparentFX

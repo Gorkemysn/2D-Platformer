@@ -1533,7 +1533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7764706}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1541,7 +1541,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1549,7 +1549,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.47
 --- !u!222 &565347933
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6964,6 +6964,10 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: df99e658cb13f1d41b4796fc44f765bd, type: 2}
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 822699e7d5b65dd40aaab2f0130b044d, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 26
     m_Data: {fileID: 906612463, guid: c8ea52d7b182dd045832791ff14856d5, type: 3}
@@ -6987,6 +6991,10 @@ Tilemap:
     m_Data: {fileID: -658911693, guid: c8ea52d7b182dd045832791ff14856d5, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: -1194370008, guid: c8ea52d7b182dd045832791ff14856d5, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 175
     m_Data:
@@ -7084,12 +7092,12 @@ CompositeCollider2D:
   - m_Collider: {fileID: 1385669851}
     m_ColliderPaths:
     - - X: 270000000
+        Y: -10000000
+      - X: -80000000
+        Y: -10000000
+      - X: -80000000
         Y: -60000000
       - X: 270000000
-        Y: -10000000
-      - X: -80000000
-        Y: -10000000
-      - X: -80000000
         Y: -60000000
   m_CompositePaths:
     m_Paths:
@@ -9006,8 +9014,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19143afed80519a4183591fdb945cefc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 35237097}
-  followTarget: {fileID: 331930415}
 --- !u!1 &1974160565
 GameObject:
   m_ObjectHideFlags: 0
