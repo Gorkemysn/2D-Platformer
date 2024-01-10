@@ -12,7 +12,7 @@ public class Cutscene : MonoBehaviour
         changeTime -= Time.deltaTime;
         if (changeTime <= 0)
         {
-            SceneManager.LoadScene("Level_1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

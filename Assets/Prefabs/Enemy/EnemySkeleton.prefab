@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1797e1f2abdb07d4db817050b5681a61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  maxHealth: 15
   destroyDelay: 10
-  currentHealth: 30
+  currentHealth: 15
 --- !u!114 &5966796691859255190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   attackCooldown: 1.5
   range: 2.2
   colliderDistance: 0.5
-  damage: 2
+  damage: 5
   boxCollider: {fileID: 5966796691859255198}
 --- !u!114 &-2270849703922501632
 MonoBehaviour:

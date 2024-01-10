@@ -905,7 +905,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAME NAME
+  m_text: FORSAKEN MEMORIES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 287a4b1c9d937a047b282bf492bbb46e, type: 2}
   m_sharedMaterial: {fileID: -528931283315791847, guid: 287a4b1c9d937a047b282bf492bbb46e, type: 2}
@@ -932,8 +932,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 180
-  m_fontSizeBase: 180
+  m_fontSize: 150
+  m_fontSizeBase: 150
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

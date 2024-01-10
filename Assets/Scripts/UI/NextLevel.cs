@@ -13,7 +13,7 @@ public class NextLevel : MonoBehaviour
         }
         if (other.tag == "Finish")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 }

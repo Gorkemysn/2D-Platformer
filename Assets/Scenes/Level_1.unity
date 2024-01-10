@@ -6212,6 +6212,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5966796691859255188, guid: 0308ce45c46053f499f4054ec5c46374, type: 3}
+      propertyPath: maxHealth
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966796691859255188, guid: 0308ce45c46053f499f4054ec5c46374, type: 3}
+      propertyPath: currentHealth
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966796691859255190, guid: 0308ce45c46053f499f4054ec5c46374, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5966796691859255195, guid: 0308ce45c46053f499f4054ec5c46374, type: 3}
       propertyPath: m_Name
       value: EnemySkeleton
@@ -13685,7 +13697,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &724772778
 GameObject:
@@ -100624,8 +100636,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1790e8a44cb88d74d8d1aec8ad58d1f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
+  maxHealth: 50
+  currentHealth: 50
   healthBar: {fileID: 805932975}
   deathMenu: {fileID: 1479054638}
 --- !u!114 &1198032327
@@ -100801,7 +100813,7 @@ Transform:
   m_Children:
   - {fileID: 724772779}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1198032335
 MonoBehaviour:
@@ -101520,7 +101532,7 @@ RectTransform:
   - {fileID: 1907928858}
   - {fileID: 1762262965}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -101885,7 +101897,7 @@ Transform:
   - {fileID: 812891416}
   - {fileID: 1108796990}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1982782241
 GameObject:
