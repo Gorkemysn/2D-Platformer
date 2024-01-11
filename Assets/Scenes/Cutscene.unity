@@ -281,8 +281,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 173}
-  m_SizeDelta: {x: 1287, y: 102.7795}
+  m_AnchoredPosition: {x: -8.421593, y: 150.7231}
+  m_SizeDelta: {x: 932.5347, y: 221.1642}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &646421996
 MonoBehaviour:
@@ -304,10 +304,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello My Game
+  m_text: One day, the peaceful kingdom of Azurea was suddenly attacked by a demon
+    army. This demon army stole the rings that kept power and peace in the kingdom
+    of Azurea. Without the rings, the kingdom began to descend into chaos.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 876f490a0d58563469e9b6e61fb00e6c, type: 2}
+  m_sharedMaterial: {fileID: 5740085138167709931, guid: 876f490a0d58563469e9b6e61fb00e6c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -505,10 +507,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hellooooooo222
+  m_text: There was a powerful warrior who would bring peace back to the kingdom.
+    However, this warrior who would save the kingdom did not remember anything. Even
+    his own name.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 876f490a0d58563469e9b6e61fb00e6c, type: 2}
+  m_sharedMaterial: {fileID: 5740085138167709931, guid: 876f490a0d58563469e9b6e61fb00e6c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -532,8 +536,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -599,8 +603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -114}
-  m_SizeDelta: {x: 1287, y: 102.7795}
+  m_AnchoredPosition: {x: 4.1443, y: -167.8758}
+  m_SizeDelta: {x: 1053.262, y: 210.5311}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1548807680
 GameObject:
