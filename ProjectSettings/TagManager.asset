@@ -8,6 +8,7 @@ TagManager:
   - enemy
   - Ring
   - Goal
+  - Audio
   layers:
   - Default
   - TransparentFX

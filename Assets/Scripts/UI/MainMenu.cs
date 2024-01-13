@@ -11,12 +11,22 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     public void StartGame()
     {
-        SceneManager.LoadScene("Cutscene");
+        Invoke("ExecuteLoad", 1.5f);
     }
 
     public void Exit()
     {
         Debug.Log("QUIT");
+        Invoke("ExecuteQuit", 1.5f);
+    }
+
+    private void ExecuteLoad()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    private void ExecuteQuit()
+    {
         Application.Quit();
     }
 }
