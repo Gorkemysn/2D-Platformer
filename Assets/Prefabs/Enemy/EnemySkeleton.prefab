@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 15
-  destroyDelay: 10
+  destroyDelay: 2
   currentHealth: 15
 --- !u!114 &5966796691859255190
 MonoBehaviour:

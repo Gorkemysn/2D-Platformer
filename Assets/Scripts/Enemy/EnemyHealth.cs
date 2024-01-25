@@ -37,10 +37,8 @@ public class EnemyHealth : MonoBehaviour
     }
     IEnumerator DestroyAfterDelay()
     {
-        // Belirtilen süre kadar bekleyip sonra düþmaný yok et
         yield return new WaitForSeconds(destroyDelay);
 
-        // Ölüm animasyonu ve beklenen süre tamamlandýktan sonra düþmaný yok et
         Destroy(gameObject);
     }
 }

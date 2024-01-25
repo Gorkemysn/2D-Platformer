@@ -41,12 +41,11 @@ public class Health : MonoBehaviour
         GetComponent<PlayerMovement>().enabled = false;
         dead = true;
 
-        Invoke("ShowDeathMenu", 2f); // Ölüm menüsünü 3 saniye sonra göster
+        Invoke("ShowDeathMenu", 1.5f);
     }
 
     private void ShowDeathMenu()
     {
-        // Ölüm menüsünü göster
         if (deathMenu != null)
         {
             deathMenu.ShowDeathScreen();

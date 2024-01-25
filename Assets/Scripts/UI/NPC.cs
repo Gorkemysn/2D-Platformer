@@ -19,7 +19,7 @@ public class NPC : MonoBehaviour
 
     void Start()
     {
-        dialogBox.SetActive(false); // Diyalog kutusunu baþlangýçta gizle
+        dialogBox.SetActive(false); 
         dialogText.gameObject.SetActive(false);
         interactIcon.SetActive(false);
     }
@@ -37,7 +37,7 @@ public class NPC : MonoBehaviour
             interactIcon.transform.position = dialogPos;
         }
 
-        if (inRange && Input.GetKeyDown(KeyCode.E)) // E tuþu ile etkileþime geç
+        if (inRange && Input.GetKeyDown(KeyCode.E)) 
         {
             dialogActive = true;
             dialogBox.SetActive(true);
@@ -45,7 +45,7 @@ public class NPC : MonoBehaviour
             ShowNextDialog();
         }
 
-        if (dialogActive && Input.GetMouseButtonDown(0)) // Sol týk ile diyalog satýrlarýný ilerlet
+        if (dialogActive && Input.GetMouseButtonDown(0)) 
         {
             ShowNextDialog();
         }
@@ -53,7 +53,7 @@ public class NPC : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) // Karakter NPC'nin etkileþim menziline girdiðinde
+        if (other.CompareTag("Player")) 
         {
             inRange = true;
             interactIcon.SetActive(true);
@@ -62,12 +62,12 @@ public class NPC : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) // Karakter NPC'nin etkileþim menzilinden çýktýðýnda
+        if (other.CompareTag("Player")) 
         {
             inRange = false;
             dialogActive = false;
-            dialogBox.SetActive(false); // Diyalog kutusunu gizle
-            currentLine = 0; // Diyalog satýrýný sýfýrla (baþtan baþla)
+            dialogBox.SetActive(false); 
+            currentLine = 0; 
             interactIcon.SetActive(false);
         }
     }
@@ -76,20 +76,20 @@ public class NPC : MonoBehaviour
     {
         if (dialogActive && currentLine < dialogLines.Length)
         {
-            dialogText.text = dialogLines[currentLine]; // Diyalog metnini güncelle
-            currentLine++; // Bir sonraki diyalog satýrýna geç
+            dialogText.text = dialogLines[currentLine]; 
+            currentLine++; 
 
             if (currentLine == dialogLines.Length)
             {
-                StartCoroutine(CloseDialog()); // Diyalog bittiðinde kutuyu kapat
+                StartCoroutine(CloseDialog());
             }
         }
     }
 
     IEnumerator CloseDialog()
     {
-        yield return new WaitForSeconds(3f); // Bir saniye bekleyerek
-        dialogBox.SetActive(false); // Diyalog kutusunu gizle
-        currentLine = 0; // Diyalog satýrýný sýfýrla (baþtan baþla)
+        yield return new WaitForSeconds(2f); 
+        dialogBox.SetActive(false); 
+        currentLine = 0; 
     }
 }
